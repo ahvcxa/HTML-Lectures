@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <div>
+      <form action="register.php"></form>
+      <label for="fname">First name</label><br />
+      <input type="text" id="fname" /><br /><br />
+      <label for="lname">Last name</label><br />
+      <input type="text" id="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+      <p>
+        If you click the "Submit" button, the form-data will be sent to a page
+        called "/register.php".
+      </p>
+    </div>
+    <!-- name değişkenine karakter ismi verdim radioların hepsini seçmemizi engelliyor -->
+    <div>
+      <p>En Sevdiğin Naruto Karakteri ?</p>
+      <input type="radio" id="Naruto" name="karakter" />
+      <label for="Naruto">Naruto</label>
+
+      <input type="radio" id="Sasuke" name="karakter" />
+      <label for="Sasuke">Sasuke</label>
+
+      <input type="radio" id="Orochimaru" name="karakter" />
+      <label for="Orochimaru">Orochimaru</label>
+    </div>
+
+    <div>
+      <p>Neden En Sevdiğin Karakter 3 Kelime ile anlat.</p>
+
+      <textarea id="onayla" cols="" rows=""></textarea><br />
+      <button for="onayla">Onayla</button>
+    </div>
+    <br /><br />
+    <div>
+      <label for="cities">Şehir</label>
+      <select id="cities">
+        <option value="34">İstanbul</option>
+        <option value="02">Adıyaman</option>
+      </select>
+    </div>
+    <div>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+      <input type="submit" value="Submit" />
+    </div>
+  </body>
+</html>
